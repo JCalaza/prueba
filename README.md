@@ -1,2 +1,2 @@
 # prueba
-Para probar algunas cosas.
+Prueba acerca del funcionamiento Posit Connect para publicar (URL) una aplicación Shiny.
