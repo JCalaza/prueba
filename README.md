@@ -1,13 +1,13 @@
-Posit Connect
+# Posit Connect
 
 Ejecutar una aplicación de Shiny sin hacerlo directamente desde R, sino a través de una URL, se logra al desplegar la aplicación en un servidor. Esto permite que cualquier persona con el enlace pueda interactuar con ella sin necesidad de tener R o RStudio instalado.
 
-Despliegue en Servidores Gratuitos
+## Despliegue en Servidores Gratuitos
 
 La forma más común y accesible para los desarrolladores es utilizar servicios de alojamiento de Shiny. Estos son algunos de los más populares:
-Shinyapps.io: Este servicio de RStudio (ahora Posit) es la opción más sencilla para principiantes. Solo necesitas una cuenta de Posit Cloud y puedes publicar tu app con unos pocos clics desde RStudio. El plan gratuito permite alojar varias aplicaciones con un número limitado de horas de uso al mes.
-Posit Connect: Es una solución empresarial que ofrece más control y funciones avanzadas, como autenticación y permisos. Es ideal para organizaciones que necesitan compartir aplicaciones internamente. Para desplegar una aplicación en Posit Connect, el proceso es similar al de shinyapps.io en lo que respecta al uso de RStudio, pero requiere de una configuración previa del servidor. A diferencia de shinyapps.io, que es un servicio alojado, Posit Connect es una solución empresarial que se instala en un servidor propio o en la nube.
-Publicar desde un repositorio de GitHub
+### Shinyapps.io: Este servicio de RStudio (ahora Posit) es la opción más sencilla para principiantes. Solo necesitas una cuenta de Posit Cloud y puedes publicar tu app con unos pocos clics desde RStudio. El plan gratuito permite alojar varias aplicaciones con un número limitado de horas de uso al mes.
+### Posit Connect: Es una solución empresarial que ofrece más control y funciones avanzadas, como autenticación y permisos. Es ideal para organizaciones que necesitan compartir aplicaciones internamente. Para desplegar una aplicación en Posit Connect, el proceso es similar al de shinyapps.io en lo que respecta al uso de RStudio, pero requiere de una configuración previa del servidor. A diferencia de shinyapps.io, que es un servicio alojado, Posit Connect es una solución empresarial que se instala en un servidor propio o en la nube.
+## Publicar desde un repositorio de GitHub
 Publicar una aplicación de Shiny directamente desde un repositorio de GitHub es una forma eficiente de mantener tu aplicación actualizada y al mismo tiempo aprovechar las ventajas del control de versiones. El proceso puede variar un poco dependiendo de la plataforma de destino, pero en ambos casos se integra la conexión con Git.
 Despliegue en Posit Connect
 Posit Connect tiene una funcionalidad llamada "Git-Backed Content" que te permite desplegar contenido directamente desde un repositorio de Git, e incluso configurarlo para que se actualice automáticamente cada vez que haya un nuevo “commit”.
