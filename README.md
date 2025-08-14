@@ -5,17 +5,17 @@ Ejecutar una aplicación de Shiny sin hacerlo directamente desde R, sino a trav�
 ## Despliegue en Servidores Gratuitos
 
 La forma más común y accesible para los desarrolladores es utilizar servicios de alojamiento de Shiny. Estos son algunos de los más populares:
-### Shinyapps.io: Este servicio de RStudio (ahora Posit) es la opción más sencilla para principiantes. Solo necesitas una cuenta de Posit Cloud y puedes publicar tu app con unos pocos clics desde RStudio. El plan gratuito permite alojar varias aplicaciones con un número limitado de horas de uso al mes.
-### Posit Connect: Es una solución empresarial que ofrece más control y funciones avanzadas, como autenticación y permisos. Es ideal para organizaciones que necesitan compartir aplicaciones internamente. Para desplegar una aplicación en Posit Connect, el proceso es similar al de shinyapps.io en lo que respecta al uso de RStudio, pero requiere de una configuración previa del servidor. A diferencia de shinyapps.io, que es un servicio alojado, Posit Connect es una solución empresarial que se instala en un servidor propio o en la nube.
+- Shinyapps.io: Este servicio de RStudio (ahora Posit) es la opción más sencilla para principiantes. Solo necesitas una cuenta de Posit Cloud y puedes publicar tu app con unos pocos clics desde RStudio. El plan gratuito permite alojar varias aplicaciones con un número limitado de horas de uso al mes.
+- Posit Connect: Es una solución empresarial que ofrece más control y funciones avanzadas, como autenticación y permisos. Es ideal para organizaciones que necesitan compartir aplicaciones internamente. Para desplegar una aplicación en Posit Connect, el proceso es similar al de shinyapps.io en lo que respecta al uso de RStudio, pero requiere de una configuración previa del servidor. A diferencia de shinyapps.io, que es un servicio alojado, Posit Connect es una solución empresarial que se instala en un servidor propio o en la nube.
 ## Publicar desde un repositorio de GitHub
-Publicar una aplicación de Shiny directamente desde un repositorio de GitHub es una forma eficiente de mantener tu aplicación actualizada y al mismo tiempo aprovechar las ventajas del control de versiones. El proceso puede variar un poco dependiendo de la plataforma de destino, pero en ambos casos se integra la conexión con Git.
-Despliegue en Posit Connect
-Posit Connect tiene una funcionalidad llamada "Git-Backed Content" que te permite desplegar contenido directamente desde un repositorio de Git, e incluso configurarlo para que se actualice automáticamente cada vez que haya un nuevo “commit”.
-Crear un manifest.json: En la raíz de tu proyecto, debes crear un archivo manifest.json. Este archivo es crucial, ya que le dice a Posit Connect qué paquetes de R necesita instalar y cómo debe ejecutar la aplicación. Puedes generarlo fácilmente desde R con el comando rsconnect::writeManifest().
 
-Vincular el repositorio en Posit Connect:
-Inicia sesión en la interfaz de usuario de tu servidor de Posit Connect.
-Haz clic en "Publish" y luego en "Import from Git".
+Publicar una aplicación de Shiny directamente desde un repositorio de GitHub es una forma eficiente de mantener tu aplicación actualizada y al mismo tiempo aprovechar las ventajas del control de versiones. El proceso puede variar un poco dependiendo de la plataforma de destino, pero en ambos casos se integra la conexión con Git.
+### Despliegue en Posit Connect
+Posit Connect tiene una funcionalidad llamada "Git-Backed Content" que te permite desplegar contenido directamente desde un repositorio de Git, e incluso configurarlo para que se actualice automáticamente cada vez que haya un nuevo “commit”.
+- Crear un manifest.json: En la raíz de tu proyecto, debes crear un archivo manifest.json. Este archivo es crucial, ya que le dice a Posit Connect qué paquetes de R necesita instalar y cómo debe ejecutar la aplicación. Puedes generarlo fácilmente desde R con el comando rsconnect::writeManifest().
+- Vincular el repositorio en Posit Connect:
+* Inicia sesión en la interfaz de usuario de tu servidor de Posit Connect.
+* Haz clic en "Publish" y luego en "Import from Git".
 Introduce la URL de tu repositorio de GitHub. Posit Connect escaneará el repositorio en busca de archivos manifest.json.
 Selecciona el manifest.json que corresponde a tu aplicación y elige la rama que deseas monitorear.
 Una vez configurado, Posit Connect se encargará de clonar el repositorio, instalar las dependencias y desplegar la aplicación. Si configuras la opción de auto-actualización, cualquier cambio en la rama que especificaste activará un nuevo despliegue.
