@@ -14,10 +14,10 @@ Publicar una aplicación de Shiny directamente desde un repositorio de GitHub es
 Posit Connect tiene una funcionalidad llamada "Git-Backed Content" que te permite desplegar contenido directamente desde un repositorio de Git, e incluso configurarlo para que se actualice automáticamente cada vez que haya un nuevo “commit”.
 - Crear un manifest.json: En la raíz de tu proyecto, debes crear un archivo manifest.json. Este archivo es crucial, ya que le dice a Posit Connect qué paquetes de R necesita instalar y cómo debe ejecutar la aplicación. Puedes generarlo fácilmente desde R con el comando rsconnect::writeManifest().
 - Vincular el repositorio en Posit Connect:
--- Inicia sesión en la interfaz de usuario de tu servidor de Posit Connect.
--- Haz clic en "Publish" y luego en "Import from Git".
--- Introduce la URL de tu repositorio de GitHub. Posit Connect escaneará el repositorio en busca de archivos manifest.json.
--- Selecciona el manifest.json que corresponde a tu aplicación y elige la rama que deseas monitorear.
+  1. Inicia sesión en la interfaz de usuario de tu servidor de Posit Connect.
+  2. Haz clic en "Publish" y luego en "Import from Git".
+  3. Introduce la URL de tu repositorio de GitHub. Posit Connect escaneará el repositorio en busca de archivos manifest.json
+  4. Selecciona el manifest.json que corresponde a tu aplicación y elige la rama que deseas monitorear.
   
 Una vez configurado, Posit Connect se encargará de clonar el repositorio, instalar las dependencias y desplegar la aplicación. Si configuras la opción de auto-actualización, cualquier cambio en la rama que especificaste activará un nuevo despliegue.
 ¿Qué es un manifest.json?
