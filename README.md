@@ -1,6 +1,6 @@
 # Posit Connect
 
-Ejecutar una aplicación de Shiny sin hacerlo directamente desde R, sino a través de una URL, se logra al desplegar la aplicación en un servidor. Esto permite que cualquier persona con el enlace pueda interactuar con ella sin necesidad de tener R o RStudio instalado.
+Ejecutar una aplicación de Shiny sin hacerlo directamente desde R, sino a través de una URL, se logra al desplegar la aplicación en un servidor. Esto permite que cualquier persona con el enlace pueda interactuar con ella sin necesidad de tener R o RStudio instalado. Publicar una aplicación de Shiny directamente desde un repositorio de GitHub.
 
 [Vídeo explicativo](https://screencast.apps.chrome/14DF9UNkR24nqEUq4dS9hdy_bPzA21IfV?createdTime=2025-08-15T09%3A26%3A13.839Z)
 
